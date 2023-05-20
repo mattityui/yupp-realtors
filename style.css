@@ -1,3 +1,66 @@
-ul li {
-  font-size: 20px;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.bg-image {
+  background-image: url("images/background.jfif");
+
+  height: 100vh;
+}
+
+@media (min-width: 600px) {
+  /* Desktop view */
+  .search-bar {
+    width: 500px;
+    height: 50px;
+  }
+}
+.dropend .dropdown-toggle {
+  color: rgb(253, 87, 69);
+  margin-left: 1em;
+}
+.dropdown-item:hover {
+  background-color: rgb(240, 63, 63);
+  color: #fff;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  border-top: #fff;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+@media screen and (min-width: 769px) {
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .dropend .dropdown-toggle {
+    margin-left: 0.5em;
+  }
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: rgb(240, 63, 63);
+}
+.nav-link.active:hover {
+  color: rgb(240, 63, 63);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  font-weight: bold;
+  color: rgb(240, 63, 63);
 }
