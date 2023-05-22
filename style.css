@@ -4,6 +4,15 @@
   padding: 0;
   margin: 0;
 }
+@keyframes scroll {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(calc(-250px * 7));
+  }
+}
+
 @media screen and (min-width: 769px) {
   .dropend:hover > .dropdown-menu {
     position: absolute;
@@ -80,7 +89,7 @@
   font-size: 20px;
 }
 .nav-link:hover {
-  color: rgb(240, 63, 63);
+  color: rgb(255, 255, 255);
 }
 .nav-link.active:hover {
   color: rgb(240, 63, 63);
@@ -234,4 +243,20 @@
 }
 .btn .btn-style .btn-lg {
   height: 500px;
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
 }

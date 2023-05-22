@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- Begin Nav -->
-    <nav class="navbar navbar-expand-lg text-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container my-3">
         <a class="navbar-brand" href="index.html">
           <img src="images/yupp-logo.png" width="80" alt="logo"
@@ -41,8 +41,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Buy</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                href="index.html"
+                >Buy</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">House & Lot</a></li>
+                <li><a class="dropdown-item" href="#">Condominuim</a></li>
+                <li><a class="dropdown-item" href="#">Lot Only</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -249,7 +261,7 @@
       </div>
     </nav>
     <!-- End Nav -->
-    <div class="container">
+    <div class="container mt-3">
       <div class="row">
         <iframe
           width="560"
@@ -262,9 +274,9 @@
         ></iframe>
       </div>
       <div class="container my-5">
-        <div class="row">
-          <h1>Short History</h1>
-          <p>
+        <div class="row mx-5">
+          <h1 class="text-center">Short History</h1>
+          <p class="text-center">
             In the summer of 2013, a team of Young Professionals founded a group
             of strong and motivated individuals with a purpose of empowering and
             conquering the Real Estate Arena. These aggressive individuals set
@@ -274,22 +286,22 @@
             the industry.
           </p>
         </div>
-        <div class="row">
-          <h1>Motto</h1>
-          <p>
+        <div class="row mx-5">
+          <h1 class="text-center">Motto</h1>
+          <p class="text-center">
             "Don't just strive for excellence, you have to maintain it" The
             motto symbolizes the strength and will of each and every Yuppies in
             the quest for excellence - the empowerment of the individuals, as
             well as the knowledge, skills, and attitude in the workplace.
           </p>
         </div>
-        <div class="row">
-          <h1>Vision Statement</h1>
-          <p>
+        <div class="row mx-5">
+          <h1 class="text-center">Vision Statement</h1>
+          <p class="text-center">
             Our vision is to become everybody’s partner in giving quality
             products and rendering competent and quality services.
           </p>
-          <p>
+          <p class="text-center">
             • Honesty, Fairness and Integrity - whatever we do, whatever the
             outcome, we want to be known as having done our part with honesty,
             fairness and integrity. <br />• Adherence to the Golden Rule - "Do
@@ -302,21 +314,78 @@
         </div>
       </div>
     </div>
-
+    <!-- Begin Slider -->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="images/atharra-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/cli-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/fortune-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img
+            src="images/AppleOne-Properties-logo.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img src="images/mandani-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/phi-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/SMDC-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/atharra-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/cli-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/fortune-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img
+            src="images/AppleOne-Properties-logo.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img src="images/mandani-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/phi-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/SMDC-logo.png" height="100" width="250" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Slider -->
     <!-- Begin Footer -->
     <footer>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.83890731117108!2d123.86054368005101!3d9.644891690178088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa4c36ec2d8e2d%3A0xe3f70eccc46d0990!2sYoung%20Urban%20Property%20Professionals%20Incorporated!5e0!3m2!1sen!2sph!4v1684747330005!5m2!1sen!2sph"
-        width="1920"
+        width="101%"
         height="500"
         style="border: black 1px solid"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-      <div class="container" id="contact-us">
-        <div class="row align-items-center justify-content-center my-2 ms-3">
-          <div class="col-lg-4 col-sm-12 text-black border-end">
+      <div class="container pt-4" id="contact-us">
+        <div class="row align-items-center justify-content-center mt-4 ms-3">
+          <div class="col-lg-4 col-sm-12 text-danger border-end">
             <div class="display-3 mb-4">
               <strong>CONTACT US</strong>
             </div>
@@ -379,13 +448,7 @@
             /></a>
           </div>
         </div>
-        <!-- <div class="footer-image mb-2">
-      <img
-        src="images/footer-image.jpg"
-        class="w-50 justify-content-center"
-        alt=""
-      />
-    </div> -->
+
         <div class="col-12 m-0 fontfooter">
           <i class="opacity-50">
             For listings in Philippines, the trademarks REALTOR®, REALTORS®, and
@@ -396,6 +459,13 @@
             services provided by real estate professionals who are members of
             CREA. Used under license.
           </i>
+        </div>
+        <div class="footer-image mb-0">
+          <img
+            src="images/footer-image.jpg"
+            class="w-50 justify-content-center"
+            alt=""
+          />
         </div>
       </div>
     </footer>
