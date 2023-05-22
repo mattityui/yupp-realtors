@@ -32,6 +32,12 @@
     height: 50px;
   }
 }
+@media (max-width: 320px) {
+  .col-12.mb-3.d-block.d-md-none:nth-child(n + 2),
+  .col-md-4.mb-3.d-none.d-md-block:nth-child(n + 2) {
+    display: none;
+  }
+}
 
 .bg-image {
   background-image: url("images/background.jfif");
