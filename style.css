@@ -38,10 +38,20 @@
     display: none;
   }
 }
+@media (min-width: 821px) {
+  /* Desktop view */
+  .bg-image {
+    height: 77px;
+  }
+}
 
 .bg-image {
   background-image: url("images/background.jfif");
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 20vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dropend .dropdown-toggle {
@@ -66,8 +76,8 @@
   display: none;
 }
 .nav-link {
-  color: white;
-  font-size: 19px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
 .nav-link:hover {
   color: rgb(240, 63, 63);
@@ -113,15 +123,9 @@
   padding: 1rem 0;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+.btn-style:hover {
+  background-color: #bd1f0d;
+  border-color: #e74c3c;
   color: white;
 }
 .nav-item {
@@ -201,4 +205,33 @@
 .carousel-card-img {
   height: 280px;
   object-fit: cover;
+}
+.btn-style {
+  background-color: #e7311d;
+  color: white;
+}
+.carousel-card-icon {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.fontfooter {
+  font-size: 10px;
+  text-align: center;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: #e74c3c;
+}
+.card {
+  transition: all 0.3s;
+  height: 100%;
+  width: 100%;
+}
+.card:hover {
+  transform: scale(1.15);
+}
+.btn .btn-style .btn-lg {
+  height: 500px;
 }

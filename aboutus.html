@@ -20,313 +20,382 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-image h-75">
-      <!-- Begin Nav -->
-      <nav class="navbar navbar-expand-lg text-light">
-        <div class="container my-3">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/yupp-logo.png" width="80" alt="logo"
-          /></a>
+    <!-- Begin Nav -->
+    <nav class="navbar navbar-expand-lg text-light">
+      <div class="container my-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/yupp-logo.png" width="80" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Buy</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sell
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">House & Lot</a></li>
+                <li><a class="dropdown-item" href="#">Condominuim</a></li>
+                <li><a class="dropdown-item" href="#">Lot Only</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown mb-0">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                >Rent</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">House & Lot</a></li>
+                <li><a class="dropdown-item" href="#">Condominuim</a></li>
+                <li><a class="dropdown-item" href="#">Lot Only</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services Offered</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Design</a></li>
+                <li><a class="dropdown-item" href="#">Build</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Title Verification</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
           <button
-            class="navbar-toggler collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            class="btn btn-danger"
+            type="submit "
+            data-bs-toggle="modal"
+            data-bs-target="#authModal"
           >
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
+            Sign In / Sign Up
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Buy</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Sell
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">House & Lot</a></li>
-                  <li><a class="dropdown-item" href="#">Condominuim</a></li>
-                  <li><a class="dropdown-item" href="#">Lot Only</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown mb-0">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  >Rent</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">House & Lot</a></li>
-                  <li><a class="dropdown-item" href="#">Condominuim</a></li>
-                  <li><a class="dropdown-item" href="#">Lot Only</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Services Offered</a
-                >
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Design</a></li>
-                  <li><a class="dropdown-item" href="#">Build</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Title Verification</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-us">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-            </ul>
-            <button
-              class="btn btn-danger"
-              type="submit "
-              data-bs-toggle="modal"
-              data-bs-target="#authModal"
-            >
-              Sign In / Sign Up
-            </button>
-            <!-- Modal -->
-            <!-- Sign In/Sign Up Modal -->
-            <div
-              class="modal fade"
-              id="authModal"
-              tabindex="-1"
-              aria-labelledby="authModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="authModalLabel"></h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <ul
-                      class="nav nav-pills mb-4 justify-content-center"
-                      id="authTabs"
-                      role="tablist"
+          <!-- Modal -->
+          <!-- Sign In/Sign Up Modal -->
+          <div
+            class="modal fade"
+            id="authModal"
+            tabindex="-1"
+            aria-labelledby="authModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="authModalLabel"></h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <ul
+                    class="nav nav-pills mb-4 justify-content-center"
+                    id="authTabs"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="signInTab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#signInForm"
+                        type="button"
+                        role="tab"
+                        aria-controls="signInForm"
+                        aria-selected="true"
+                      >
+                        Sign In
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="signUpTab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#signUpForm"
+                        type="button"
+                        role="tab"
+                        aria-controls="signUpForm"
+                        aria-selected="true"
+                      >
+                        Sign Up
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="authTabsContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="signInForm"
+                      role="tabpanel"
+                      aria-labelledby="signInTab"
                     >
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link active"
-                          id="signInTab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#signInForm"
-                          type="button"
-                          role="tab"
-                          aria-controls="signInForm"
-                          aria-selected="true"
-                        >
-                          Sign In
-                        </button>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <button
-                          class="nav-link"
-                          id="signUpTab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#signUpForm"
-                          type="button"
-                          role="tab"
-                          aria-controls="signUpForm"
-                          aria-selected="true"
-                        >
-                          Sign Up
-                        </button>
-                      </li>
-                    </ul>
-                    <div class="tab-content" id="authTabsContent">
-                      <div
-                        class="tab-pane fade show active"
-                        id="signInForm"
-                        role="tabpanel"
-                        aria-labelledby="signInTab"
-                      >
-                        <!-- Sign In form content -->
-                        <form>
-                          <div class="mb-3">
-                            <label for="signInEmail" class="form-label"
-                              >Email address</label
-                            >
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="signInEmail"
-                              placeholder="Enter your email"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <label for="signInPassword" class="form-label"
-                              >Password</label
-                            >
-                            <input
-                              type="password"
-                              class="form-control"
-                              id="signInPassword"
-                              placeholder="Enter your password"
-                            />
-                          </div>
-                          <div class="d-grid gap-4 col-6 mx-auto">
-                            <button type="submit" class="btn btn-primary">
-                              Sign In
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="signUpForm"
-                        role="tabpanel"
-                        aria-labelledby="signUpTab"
-                      >
-                        <!-- Sign Up form content -->
-                        <form>
-                          <div class="mb-3">
-                            <label for="signUpEmail" class="form-label"
-                              >Email address</label
-                            >
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="signUpEmail"
-                              placeholder="Enter your email"
-                            />
-                          </div>
-                          <div class="mb-3">
-                            <label for="signUpPassword" class="form-label"
-                              >Password</label
-                            >
-                            <input
-                              type="password"
-                              class="form-control"
-                              id="signUpPassword"
-                              placeholder="Enter your password"
-                            />
-                          </div>
-                          <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="submit" class="btn btn-primary">
-                              Sign Up
-                            </button>
-                          </div>
-                        </form>
-                      </div>
+                      <!-- Sign In form content -->
+                      <form>
+                        <div class="mb-3">
+                          <label for="signInEmail" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="signInEmail"
+                            placeholder="Enter your email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="signInPassword" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="signInPassword"
+                            placeholder="Enter your password"
+                          />
+                        </div>
+                        <div class="d-grid gap-4 col-6 mx-auto">
+                          <button type="submit" class="btn btn-style">
+                            Sign In
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="signUpForm"
+                      role="tabpanel"
+                      aria-labelledby="signUpTab"
+                    >
+                      <!-- Sign Up form content -->
+                      <form>
+                        <div class="mb-3">
+                          <label for="signUpEmail" class="form-label"
+                            >Email address</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="signUpEmail"
+                            placeholder="Enter your email"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="signUpPassword" class="form-label"
+                            >Password</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="signUpPassword"
+                            placeholder="Enter your password"
+                          />
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                          <button type="submit" class="btn btn-style">
+                            Sign Up
+                          </button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- End modal -->
           </div>
+          <!-- End modal -->
         </div>
-      </nav>
-      <!-- End Nav -->
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <div class="container">
+      <div class="row">
+        <iframe
+          width="560"
+          height="560"
+          src="https://www.youtube.com/embed/Qex4gkXJkgQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="container my-5">
+        <div class="row">
+          <h1>Short History</h1>
+          <p>
+            In the summer of 2013, a team of Young Professionals founded a group
+            of strong and motivated individuals with a purpose of empowering and
+            conquering the Real Estate Arena. These aggressive individuals set
+            the foundation for what evolved into a recognized and respected firm
+            - Young Urban Property Professionals. They combine knowledge,
+            competence, skills, character and attitude to compete and excel in
+            the industry.
+          </p>
+        </div>
+        <div class="row">
+          <h1>Motto</h1>
+          <p>
+            "Don't just strive for excellence, you have to maintain it" The
+            motto symbolizes the strength and will of each and every Yuppies in
+            the quest for excellence - the empowerment of the individuals, as
+            well as the knowledge, skills, and attitude in the workplace.
+          </p>
+        </div>
+        <div class="row">
+          <h1>Vision Statement</h1>
+          <p>
+            Our vision is to become everybody’s partner in giving quality
+            products and rendering competent and quality services.
+          </p>
+          <p>
+            • Honesty, Fairness and Integrity - whatever we do, whatever the
+            outcome, we want to be known as having done our part with honesty,
+            fairness and integrity. <br />• Adherence to the Golden Rule - "Do
+            unto others as we would have them do unto us." <br />•
+            Professionalism - When we undertake a task, we will do it as
+            promised or agreed with intelligence, enthusiasm, competence and
+            courtesy. We shall communicate with all interested parties in a
+            timely manner.
+          </p>
+        </div>
+      </div>
     </div>
+
     <!-- Begin Footer -->
-    <footer class="justify-content-end">
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.83890731117108!2d123.86054368005101!3d9.644891690178088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa4c36ec2d8e2d%3A0xe3f70eccc46d0990!2sYoung%20Urban%20Property%20Professionals%20Incorporated!5e0!3m2!1sen!2sph!4v1684747330005!5m2!1sen!2sph"
+        width="1920"
+        height="500"
+        style="border: black 1px solid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       <div class="container" id="contact-us">
-        <div class="row align-items-center justify-content-between mt-5">
-          <div class="col-lg-4 col-sm-12 text-black">
-            <div class="text-center-mobile text-center-desktop display-3 mb-4">
+        <div class="row align-items-center justify-content-center my-2 ms-3">
+          <div class="col-lg-4 col-sm-12 text-black border-end">
+            <div class="display-3 mb-4">
               <strong>CONTACT US</strong>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-4">
             <dl class="row">
-              <dt class="col-sm-3 bi text-center-mobile text-center-desktop">
+              <dt class="col-sm-3">
                 <strong> &nbspOffice:</strong>
               </dt>
-              <dd class="col-sm-9 text-center-mobile text-center-desktop">
+              <dd class="col-sm-9">
                 2F BOPE-MPC Bldg., F. Rocha St., Poblacion III, Tagbilaran City,
                 Bohol
               </dd>
 
-              <dt class="col-sm-3 bi text-center-mobile text-center-desktop">
+              <dt class="col-sm-3 bi">
                 <strong>&nbspContact:</strong>
               </dt>
-              <dd class="col-sm-9 text-center-mobile text-center-desktop">
+              <dd class="col-sm-9">
                 <p>
                   0918 714 0143 (SMART) <br />
                   0995 940 1884 (GLOBE)<br />
                   (038) 411-9788 (PLDT)
                 </p>
               </dd>
-
-              <dt class="col-sm-3 bi text-center-mobile text-center-desktop">
+              <dt class="col-sm-3 bi">
                 <strong>&nbspEmail:</strong>
               </dt>
-              <dd class="col-sm-9 text-center-mobile text-center-desktop">
-                yuppofficia@gmail.com
-              </dd>
+              <dd class="col-sm-9">yuppofficia@gmail.com</dd>
             </dl>
           </div>
-          <div class="col-lg-2 text-center-mobile text-center-desktop">
+          <div class="col-lg-3">
             <p class="h4"><b> Link us on</b></p>
             <a href="https://www.facebook.com/yuppinc"
-              ><img src="images/facebook-logo.png" alt="facebook" width="40px"
+              ><img
+                src="images/facebook-logo.png"
+                alt="facebook"
+                width="50px"
+                class="pe-1"
             /></a>
             <a href="https://www.instagram.com/yuppinc/"
               ><img
                 src="images/instagram-logo.png"
                 alt="instagram"
-                width="40px"
+                width="50px"
+                class="pe-1"
             /></a>
             <a href="https://www.youtube.com/@youngurbanpropertyprofessi1219"
-              ><img src="images/youtube-logo.png" alt="youtube" width="40px"
+              ><img
+                src="images/youtube-logo.png"
+                alt="youtube"
+                width="50px"
+                class="pe-1"
             /></a>
             <a href="https://www.linkedin.com/company/yuppinc/"
-              ><img src="images/linkin-logo.png" alt="linkin" width="40px"
+              ><img
+                src="images/linkin-logo.png"
+                alt="linkin"
+                width="50px"
+                class="pe-1"
             /></a>
           </div>
-          <div class="col-lg-3 text-center-mobile text-center-desktop mt-4">
-            <i class="opacity-50">
-              For listings in Canada, the trademarks REALTOR®, REALTORS®, and
-              the REALTOR® logo are controlled by The Canadian Real Estate
-              Association (CREA) and identify real estate professionals who are
-              members of CREA. The trademarks MLS®, Multiple Listing Service®
-              and the associated logos are owned by CREA and identify the
-              quality of services provided by real estate professionals who are
-              members of CREA. Used under license.
-            </i>
-          </div>
         </div>
-        <div class="footer-image mb-2">
-          <img
-            src="images/footer-image.jpg"
-            class="w-50 justify-content-center"
-            alt=""
-          />
+        <!-- <div class="footer-image mb-2">
+      <img
+        src="images/footer-image.jpg"
+        class="w-50 justify-content-center"
+        alt=""
+      />
+    </div> -->
+        <div class="col-12 m-0 fontfooter">
+          <i class="opacity-50">
+            For listings in Philippines, the trademarks REALTOR®, REALTORS®, and
+            the REALTOR® logo are controlled by The Canadian Real Estate
+            Association (CREA) and identify real estate professionals who are
+            members of CREA. The trademarks MLS®, Multiple Listing Service® and
+            the associated logos are owned by CREA and identify the quality of
+            services provided by real estate professionals who are members of
+            CREA. Used under license.
+          </i>
         </div>
       </div>
     </footer>
