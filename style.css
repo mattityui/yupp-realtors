@@ -265,3 +265,7 @@
 .card-img-top2 {
   width: 20%;
 }
+.link-no-effect {
+  text-decoration: none;
+  color: inherit;
+}

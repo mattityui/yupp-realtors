@@ -17,6 +17,10 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -262,8 +266,9 @@
           </form>
         </div>
       </div>
+
+      <!-- End Search -->
     </div>
-    <!-- End Search -->
     <div class="container mt-4">
       <div class="row">
         <div class="my-4">
@@ -273,9 +278,18 @@
       <div class="row">
         <div class="col-md-3 mb-3">
           <div class="card">
-            <div id="carouselExample" class="carousel slide">
-              <div class="carousel-inner">
-                <a href="#">
+            <div
+              id="carouselExample"
+              class="carousel slide"
+              data-bs-interval="false"
+            >
+              <a
+                class="link-no-effect"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal1"
+              >
+                <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img
                       src="images/hl-1.jpg"
@@ -295,9 +309,18 @@
                       src="images/hl-3.jpg"
                       class="d-block w-100"
                       alt="Image 3"
-                    /></div
-                ></a>
-              </div>
+                    />
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title"><strong>₱10,000,000</strong></h5>
+                  <p class="card-text mt-0">
+                    4&nbspbeds&nbsp4&nbspbaths&nbsp&nbsp3,450 sq.ft. <br />
+                    <i>Lino Chatto Drive, Dakabayan sa Tagbilaran,Bohol</i>
+                  </p>
+                </div>
+              </a>
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -323,12 +346,52 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <div class="card-body">
-              <h5 class="card-title"><strong>₱10,000,000</strong></h5>
-              <p class="card-text mt-0">
-                4&nbspbeds&nbsp4&nbspbaths&nbsp&nbsp3,450 sq.ft. <br />
-                <i>Lino Chatto Drive, Dakabayan sa Tagbilaran,Bohol</i>
-              </p>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade modal-lg" id="myModal1" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title mt-3" id="myModalLabel">
+                    Lamberto Estaca Drive, Tagbilaran City, Bohol
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <img
+                    src="images/hl-1.jpg"
+                    class="d-block w-100"
+                    alt="Image 1"
+                  />
+                  <h5 class="card-title fs-2 mt-2">
+                    <strong>₱9,000,000</strong>
+                  </h5>
+                  <p class="card-text mt-0">3 bd | 2 ba | 1,388 sqft <br /></p>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Request a tour
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Contact agent
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
