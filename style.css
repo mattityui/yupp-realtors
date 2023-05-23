@@ -89,7 +89,7 @@
   font-size: 20px;
 }
 .nav-link:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(240, 63, 63);
 }
 .nav-link.active:hover {
   color: rgb(240, 63, 63);
@@ -239,7 +239,7 @@
   width: 100%;
 }
 .card:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
 }
 .btn .btn-style .btn-lg {
   height: 500px;
@@ -259,4 +259,9 @@
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+.card2 .card-img2,
+.card-img-bottom2,
+.card-img-top2 {
+  width: 20%;
 }

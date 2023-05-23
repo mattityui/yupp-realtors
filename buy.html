@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy | YUPP REALTORS®</title>
+    <link
+      rel="icon"
+      href="images/yupp-logo.png"
+      sizes="16x16 32x32"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-image">
+      <!-- Begin Nav -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container my-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/yupp-logo.png" width="80" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="buy.html">Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sell.html">Sell</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Rent</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Services Offered</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Design</a></li>
+                  <li><a class="dropdown-item" href="#">Build</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Title Verification</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-us">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-danger"
+              type="submit "
+              data-bs-toggle="modal"
+              data-bs-target="#authModal"
+            >
+              Sign In / Sign Up
+            </button>
+            <!-- Modal -->
+            <!-- Sign In/Sign Up Modal -->
+            <div
+              class="modal fade"
+              id="authModal"
+              tabindex="-1"
+              aria-labelledby="authModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <ul
+                      class="nav nav-pills mb-0 justify-content-center"
+                      id="authTabs"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="signInTab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#signInForm"
+                          type="button"
+                          role="tab"
+                          aria-controls="signInForm"
+                          aria-selected="true"
+                        >
+                          Sign In
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="signUpTab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#signUpForm"
+                          type="button"
+                          role="tab"
+                          aria-controls="signUpForm"
+                          aria-selected="true"
+                        >
+                          Sign Up
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="authTabsContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="signInForm"
+                        role="tabpanel"
+                        aria-labelledby="signInTab"
+                      >
+                        <!-- Sign In form content -->
+                        <form>
+                          <div class="mb-1">
+                            <label for="signInEmail" class="form-label"
+                              >Email address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="signInEmail"
+                              placeholder="Enter your email"
+                            />
+                          </div>
+                          <div class="mb-5">
+                            <label for="signInPassword" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="signInPassword"
+                              placeholder="Enter your password"
+                            />
+                          </div>
+                          <div class="d-grid gap-4 col-6 mx-auto">
+                            <button type="submit" class="btn btn-style">
+                              Sign In
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="signUpForm"
+                        role="tabpanel"
+                        aria-labelledby="signUpTab"
+                      >
+                        <!-- Sign Up form content -->
+                        <form>
+                          <div class="mb-1">
+                            <label for="signUpEmail" class="form-label"
+                              >Email address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control"
+                              id="signUpEmail"
+                              placeholder="Enter your email"
+                            />
+                          </div>
+                          <div class="mb-5">
+                            <label for="signUpPassword" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="password"
+                              class="form-control"
+                              id="signUpPassword"
+                              placeholder="Enter your password"
+                            />
+                          </div>
+                          <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="submit" class="btn btn-style">
+                              Sign Up
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End modal -->
+          </div>
+        </div>
+      </nav>
+      <!-- End Nav -->
+      <!-- Begin Search -->
+      <div
+        class="d-flex flex-column justify-content-center align-items-center h-50 mt-3"
+      >
+        <h1
+          class="text-center text-black mb-0 display-3 fw-semibold align-text-top mt-5"
+        >
+          <strong> Discover your perfect home</strong>
+        </h1>
+        <p>
+          With the most complete source of homes for sale & real estate near you
+        </p>
+        <div class="mt-3">
+          <div class="col-md-10 offset-md-2"></div>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control flex-grow-1 search-bar"
+              type="search"
+              placeholder="Search for City, Municipality, Neigbourhood, Zip"
+              aria-label="Search"
+            />
+            <button class="btn btn-danger" type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End Search -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="my-4">
+          <h2 class="text-center display-4 fw-bold">Affordable Homes</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <a href="#">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/hl-1.jpg"
+                      class="d-block w-100"
+                      alt="Image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl-2.jpg"
+                      class="d-block w-100"
+                      alt="Image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl-3.jpg"
+                      class="d-block w-100"
+                      alt="Image 3"
+                    /></div
+                ></a>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱10,000,000</strong></h5>
+              <p class="card-text mt-0">
+                4&nbspbeds&nbsp4&nbspbaths&nbsp&nbsp3,450 sq.ft. <br />
+                <i>Lino Chatto Drive, Dakabayan sa Tagbilaran,Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample2" class="carousel slide">
+              <div class="carousel-inner">
+                <a href="">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/hl2-1.jpg"
+                      class="d-block w-100"
+                      alt="Image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl2-2.jpg"
+                      class="d-block w-100"
+                      alt="Image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl2-3.jpg"
+                      class="d-block w-100"
+                      alt="Image 3"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱9,000,000</strong></h5>
+              <p class="card-text mt-0">
+                2&nbspbeds&nbsp1&nbspbaths&nbsp&nbsp- sq.ft. <br />
+                <i>Lamberto Estaca Drive, Tagbilaran City, Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample3" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/hl3-1.jpg"
+                    class="d-block w-100"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl3-2.jpg"
+                    class="d-block w-100"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl3-3.jpg"
+                    class="d-block w-100"
+                    alt="Image 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱8,000,000</strong></h5>
+              <p class="card-text mt-0">
+                3&nbspbeds&nbsp2&nbspbaths&nbsp&nbsp1,450 sq.ft. <br />
+                <i>Cogon District, Tagbilaran City, Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample4" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/hl4-1.jpg"
+                    class="d-block w-100"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl4-2.jpg"
+                    class="d-block w-100"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl4-3.jpg"
+                    class="d-block w-100"
+                    alt="Image 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱7,800,000</strong></h5>
+              <p class="card-text mt-0">
+                3&nbspbeds&nbsp2&nbspbaths&nbsp&nbsp1,050 sq.ft. <br />
+                <i>Ma. Clara Street, Tagbilaran City, Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <a href="#">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/hl5-1.jpg"
+                      class="d-block w-100"
+                      alt="Image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl5-2.jpg"
+                      class="d-block w-100"
+                      alt="Image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl5-3.jpg"
+                      class="d-block w-100"
+                      alt="Image 3"
+                    /></div
+                ></a>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱10,000,000</strong></h5>
+              <p class="card-text mt-0">
+                4&nbspbeds&nbsp4&nbspbaths&nbsp&nbsp3,450 sq.ft. <br />
+                <i>Lino Chatto Drive, Dakabayan sa Tagbilaran,Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample2" class="carousel slide">
+              <div class="carousel-inner">
+                <a href="">
+                  <div class="carousel-item active">
+                    <img
+                      src="images/hl6-1.jpg"
+                      class="d-block w-100"
+                      alt="Image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl6-2.jpg"
+                      class="d-block w-100"
+                      alt="Image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="images/hl6-3.jpg"
+                      class="d-block w-100"
+                      alt="Image 3"
+                    />
+                  </div>
+                </a>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample2"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱9,000,000</strong></h5>
+              <p class="card-text mt-0">
+                2&nbspbeds&nbsp1&nbspbaths&nbsp&nbsp- sq.ft. <br />
+                <i>Lamberto Estaca Drive, Tagbilaran City, Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample3" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/hl7-1.jpg"
+                    class="d-block w-100"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl7-2.jpg"
+                    class="d-block w-100"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl7-3.jpg"
+                    class="d-block w-100"
+                    alt="Image 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample3"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱8,000,000</strong></h5>
+              <p class="card-text mt-0">
+                3&nbspbeds&nbsp2&nbspbaths&nbsp&nbsp1,450 sq.ft. <br />
+                <i>Cogon District, Tagbilaran City, Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <div class="card">
+            <div id="carouselExample4" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/hl8-1.jpg"
+                    class="d-block w-100"
+                    alt="Image 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl8-2.jpg"
+                    class="d-block w-100"
+                    alt="Image 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/hl8-3.jpg"
+                    class="d-block w-100"
+                    alt="Image 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample4"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><strong>₱7,800,000</strong></h5>
+              <p class="card-text mt-0">
+                3&nbspbeds&nbsp2&nbspbaths&nbsp&nbsp1,050 sq.ft. <br />
+                <i>Ma. Clara Street, Tagbilaran City, Bohol</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Begin Slider -->
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="images/atharra-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/cli-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/fortune-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img
+            src="images/AppleOne-Properties-logo.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img src="images/mandani-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/phi-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/SMDC-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/atharra-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/cli-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/fortune-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img
+            src="images/AppleOne-Properties-logo.png"
+            height="100"
+            width="250"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img src="images/mandani-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/phi-logo.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="images/SMDC-logo.png" height="100" width="250" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Slider -->
+    <!-- Begin Footer -->
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.83890731117108!2d123.86054368005101!3d9.644891690178088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa4c36ec2d8e2d%3A0xe3f70eccc46d0990!2sYoung%20Urban%20Property%20Professionals%20Incorporated!5e0!3m2!1sen!2sph!4v1684747330005!5m2!1sen!2sph"
+        width="101%"
+        height="500"
+        style="border: black 1px solid"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <div class="container pt-4" id="contact-us">
+        <div class="row align-items-center justify-content-center mt-4 ms-3">
+          <div class="col-lg-4 col-sm-12 text-danger border-end">
+            <div class="display-3 mb-4">
+              <strong>CONTACT US</strong>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <dl class="row">
+              <dt class="col-sm-3">
+                <strong> &nbspOffice:</strong>
+              </dt>
+              <dd class="col-sm-9">
+                2F BOPE-MPC Bldg., F. Rocha St., Poblacion III, Tagbilaran City,
+                Bohol
+              </dd>
+
+              <dt class="col-sm-3 bi">
+                <strong>&nbspContact:</strong>
+              </dt>
+              <dd class="col-sm-9">
+                <p>
+                  0918 714 0143 (SMART) <br />
+                  0995 940 1884 (GLOBE)<br />
+                  (038) 411-9788 (PLDT)
+                </p>
+              </dd>
+              <dt class="col-sm-3 bi">
+                <strong>&nbspEmail:</strong>
+              </dt>
+              <dd class="col-sm-9">yuppofficia@gmail.com</dd>
+            </dl>
+          </div>
+          <div class="col-lg-3">
+            <p class="h4"><b> Link us on</b></p>
+            <a href="https://www.facebook.com/yuppinc"
+              ><img
+                src="images/facebook-logo.png"
+                alt="facebook"
+                width="50px"
+                class="pe-1"
+            /></a>
+            <a href="https://www.instagram.com/yuppinc/"
+              ><img
+                src="images/instagram-logo.png"
+                alt="instagram"
+                width="50px"
+                class="pe-1"
+            /></a>
+            <a href="https://www.youtube.com/@youngurbanpropertyprofessi1219"
+              ><img
+                src="images/youtube-logo.png"
+                alt="youtube"
+                width="50px"
+                class="pe-1"
+            /></a>
+            <a href="https://www.linkedin.com/company/yuppinc/"
+              ><img
+                src="images/linkin-logo.png"
+                alt="linkin"
+                width="50px"
+                class="pe-1"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col-12 m-0 fontfooter">
+          <i class="opacity-50">
+            For listings in Philippines, the trademarks REALTOR®, REALTORS®, and
+            the REALTOR® logo are controlled by The Canadian Real Estate
+            Association (CREA) and identify real estate professionals who are
+            members of CREA. The trademarks MLS®, Multiple Listing Service® and
+            the associated logos are owned by CREA and identify the quality of
+            services provided by real estate professionals who are members of
+            CREA. Used under license.
+          </i>
+        </div>
+        <div class="footer-image mb-0">
+          <img
+            src="images/footer-image.jpg"
+            class="w-50 justify-content-center"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Details -->
+  </body>
+</html>
