@@ -374,19 +374,73 @@
                   </h5>
                   <p class="card-text mt-0">3 bd | 2 ba | 1,388 sqft <br /></p>
                 </div>
+                <div
+                  class="modal fade"
+                  id="authModal1"
+                  tabindex="-1"
+                  aria-labelledby="authModal1Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="authModal1Label">
+                          Successful
+                        </h5>
+                        <p>The site tour has been successfully scheduled.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <div
+                  class="modal fade"
+                  id="authModal2"
+                  tabindex="-1"
+                  aria-labelledby="authModal2Label"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal-title" id="authModal2Label">
+                          Successful
+                        </h5>
+                        <p>Agent contacted successfully.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="modal-footer">
                   <button
                     type="button"
                     class="btn btn-danger"
-                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#authModal1"
                   >
                     Request a tour
                   </button>
                   <button
                     type="button"
                     class="btn btn-outline-danger"
-                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#authModal2"
                   >
                     Contact agent
                   </button>
